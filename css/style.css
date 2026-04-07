@@ -56,7 +56,7 @@ html {
   display:inline-block;
   min-width:350px; /* kunci lebar supaya border tidak ikut gerak */
   font-family:'Orbitron', sans-serif;
-  color:#22d3ee;
+  color:#ffffff;
   letter-spacing:1px;
 }
 
@@ -65,7 +65,7 @@ html {
   display:inline-block;
   width:3px;
   height:18px;
-  background:#22d3ee;
+  background:#ffffff;
   margin-left:4px;
   animation:blink 1s infinite;
 }
