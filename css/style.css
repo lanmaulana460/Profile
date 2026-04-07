@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
 :root {
   --textColor: #ffffff;
   --font: "Karla", sans-serif;
@@ -6,11 +7,11 @@
 
 html {
   margin: 0;
-  hight: 100%;
+  height: 100%; /* perbaikan dari hight */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: relative;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,115 +19,105 @@ html {
   color: var(--textColor);
   scroll-behavior: smooth;
 }
-/* ====== VIDEO BACKGROUND ====== */
+
+/* ===== VIDEO BACKGROUND ===== */
+
 .video-bg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* biar full screen tanpa ketarik */
-  z-index: -2;         /* selalu di belakang */
+  object-fit: cover;
+  z-index: -2;
 }
 
-/* overlay gelap supaya teks terlihat jelas */
 .video-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4);
   z-index: -1;
 }
-body{
-    background:#0f172a;
-}
+
+/* ===== TYPING TEXT ===== */
 
 .description{
-    font-family:'Poppins', sans-serif;
-    font-size:18px;
-    color:#e2e8f0;
-    text-align:center;
-    margin-top:15px;
+  font-size:18px;
+  text-align:center;
+  margin-top:15px;
+  min-height:28px; /* supaya layout tidak berubah */
 }
 
+/* teks typing */
 #typing{
-    font-family:'Orbitron', sans-serif;
-    color:#22d3ee;
-    letter-spacing:1px;
+  display:inline-block;
+  min-width:350px; /* kunci lebar supaya border tidak ikut gerak */
+  font-family:'Orbitron', sans-serif;
+  color:#22d3ee;
+  letter-spacing:1px;
 }
 
+/* cursor */
 .cursor{
-    display:inline-block;
-    width:3px;
-    height:18px;
-    background:#22d3ee;
-    margin-left:4px;
-    animation:blink 1s infinite;
+  display:inline-block;
+  width:3px;
+  height:18px;
+  background:#22d3ee;
+  margin-left:4px;
+  animation:blink 1s infinite;
 }
 
 @keyframes blink{
-    0%{opacity:1}
-    50%{opacity:0}
-    100%{opacity:1}
+  0%{opacity:1}
+  50%{opacity:0}
+  100%{opacity:1}
 }
+
+/* ===== PROFILE ===== */
 
 .profilePicture,
 .profilePicture img {
-  position: relative;
-  width: 130px;
-  height: 130px;
-  display: block;
-  margin: 35px auto 20px;
-  border-radius: 50%;
-  -webkit-tap-highlight-color: transparent;
+  width:130px;
+  height:130px;
+  display:block;
+  margin:35px auto 20px;
+  border-radius:50%;
 }
+
+/* ===== USERNAME ===== */
 
 .userName {
-  color: var(--textColor);
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1.25;
-  display: block;
-  font-family: var(--font);
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
+  font-size:1rem;
+  font-weight:bold;
+  text-align:center;
+  display:block;
 }
 
+/* ===== LINKS ===== */
+
 .links {
-  max-width: 675px;
-  width: auto;
-  display: block;
-  margin: 27px auto;
+  max-width:675px;
+  width:100%;
+  margin:27px auto;
 }
 
 .link {
-  position: relative;
-  background-color: transparent;
-  color: var(--textColor);
-  border: solid var(--textColor) 2px;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  text-align: center;
-  display: block;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
+  background-color:transparent;
+  color:var(--textColor);
+  border:2px solid var(--textColor);
+  border-radius:10px;
+  font-size:0.9rem;
+  text-align:center;
+  display:block;
+  margin:10px;
+  padding:10px;
+  text-decoration:none;
+  transition:0.3s;
 }
 
-@media (hover: hover) {
-  .link:hover {
-    background-color: gray;
-  }
-}
-
-@media (hover: hover) {
-  .link:hover {
-    background-color: gray;
-  }
+.link:hover{
+  background-color:gray;
 }
