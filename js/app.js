@@ -21,10 +21,10 @@ document.onkeydown = function(e) {
     }
 };
     const texts = [
-"✨ Welcome to Maulana STORe",
-"📦 Open Panel Bot WhatsApp & Telegram",
-"🤖 Open Sewa Bot WhatsApp",
-"📱 Open Nokos All Aplikasi"
+"✦ 𝗠𝗔𝗨𝗟𝗔𝗡𝗔 𝗦𝗧𝗢𝗥𝗘 ✦",
+"⚡ 𝗢𝗣𝗘𝗡 𝗣𝗔𝗡𝗘𝗟 𝗕𝗢𝗧 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 & 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠",
+"🤖 𝗢𝗣𝗘𝗡 𝗦𝗘𝗪𝗔 𝗕𝗢𝗧 𝗪𝗔",
+"📱 𝗢𝗣𝗘𝗡 𝗡𝗢𝗞𝗢𝗦 • 𝗔𝗟𝗟 𝗔𝗣𝗟𝗜𝗞𝗔𝗦𝗜"
 ];
 
 let count = 0;
