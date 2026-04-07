@@ -19,6 +19,7 @@ document.onkeydown = function(e) {
     if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
         return false;
     }
+};
     const texts = [
 "✨ Welcome to Maulana STORe",
 "📦 Open Panel Bot WhatsApp & Telegram",
@@ -51,4 +52,3 @@ function type(){
 }
 
 type();
-};
